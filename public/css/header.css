@@ -1,0 +1,169 @@
+@import url(modal.css);
+
+.bg-header {
+    background-image: url(../Imagenes/bg_header.png);
+    background-color: #21687c; 
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+header {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0;
+}
+header a.logo {
+    display: block;
+}
+header a.logo img {
+    width: 341px;
+    height: 76px;
+    object-fit: cover;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+header a.btn-header{
+    transition: background 0.15s; 
+    min-width: 120px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 8px;
+    display: block;
+    margin-right: 15px;
+}
+header a.btn-header:hover { 
+    background: white;
+    color: var(--primaryColor);
+}
+header div {
+    flex: auto;
+}
+
+nav {    
+    color: white;
+}
+nav .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+nav .menu li {
+    text-align: center;
+}
+nav .menu li.search-form{
+    flex: auto;
+}
+
+nav a {
+    transition: background 0.15s; 
+    display: block;
+    padding: 15px 15px;  
+    min-width: 120px;
+}
+nav a:hover {    
+    background-color: white;
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+nav form{
+    padding: 10px;
+    text-align: end;
+}
+
+nav input[type=search] {
+    background: none;
+    border: 2px solid white;
+    height: 30px;
+    width: 30vw;
+    min-width: 180px;
+    padding-left: 5px;
+}
+nav input[type=search]::placeholder {
+    color: #bbb;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+nav input[type=search]:focus {
+    outline: none;
+    background-color: white;
+    color: black;
+}
+nav input[type=search]:focus::placeholder {
+    color: gray;
+}
+nav button[type=submit] {
+    transition: background 0.15s; 
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+}
+nav button[type=submit]:hover {   
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+nav i.fa-search{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1043px) {
+    nav form>button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header div {
+        display: none;
+    }
+    header {
+        justify-content: space-evenly;
+    }
+    header a.logo{
+        flex-basis: 90%;
+        text-align: center  ;
+    }
+    header a.btn-header {
+        flex-basis: 40%;
+        margin-right: 0;
+    }
+    nav .menu {
+        flex-flow: column nowrap;
+    }
+    nav .menu li {
+        width: 100%;
+    }
+    nav form { 
+        text-align: center;
+    }
+    nav input[type=search]{
+        width: 90%;
+    }
+    nav button[type=submit]{
+        display: none;
+    }
+}
+
+@media screen and (max-width:380px){
+    header {
+        justify-content: center;
+    }
+    header a.logo img {
+        width: 90vw;
+    }
+    header a.btn-header {
+        flex-basis: 70%;
+        margin-bottom: 5px;
+    }
+}

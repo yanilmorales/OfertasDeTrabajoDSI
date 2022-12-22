@@ -1,0 +1,173 @@
+@import url(main.css);
+@import url(header.css);
+@import url(footer.css);
+
+section#intro{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4b4b4b;
+    background-blend-mode: multiply;
+    background-image: url(../Imagenes/bg_intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+section#intro h2{
+    color: white;
+    font-size: 36px;
+}
+
+section#intro p{
+    margin: 10px 5%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+section#intro img{
+    width: 400px;
+    height: 100px;
+    object-fit: cover;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+section#enterprises img{
+    margin: 0 5%;
+    width: 90%;
+    object-fit: cover;
+}
+
+section#description{
+    background-color: #4b4b4b;
+    background-blend-mode:multiply;
+    background-image: url(../Imagenes/bg_desc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 55vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section#description h2{
+    color: white;
+    font-size: 36px;
+    margin-bottom: 15px;
+    
+}
+
+section#description p{
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 18px;
+}
+
+section {
+    margin: 20px 0px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+section ul.job-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+section ul.job-list>li {
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px #e0e0e0;
+    flex-basis: 27%;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+section ul.job-list>li:hover {
+    box-shadow: 2px 2px 5px 2px gray;
+}
+
+section ul.job-list>li > img {
+    width: 50%;
+}
+
+section ul.job-list>li > h3 {
+    margin: 5px 0;
+}
+
+section ul.job-list>li > button, section ul.job-list>li > a{
+    position: absolute;
+    right: 10px;
+}
+
+section ul.job-list>li > button.fav {
+    top: 10px;
+    background-color: white;
+    border: none;
+    color: #870E2D;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+section ul.job-list>li > a {    
+    bottom: 10px;
+    color: var(--primaryColor);
+    font-size: 0.75rem;
+}
+
+section ul.job-list>li > p.nombre-empresa {
+    font-size: 0.80rem;
+    margin-bottom: 10px;
+}
+
+section ul.job-list>li > p.direccion {
+    font-size: 0.70rem;
+    font-weight: 300;
+    color: gray;
+}
+
+i.fa-location-arrow{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:710px) {
+    section ul.job-list>li {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:570px) {
+    section ul.job-list {
+        flex-flow: column nowrap;
+    }
+    section ul.job-list>li {
+        margin: 20px; 
+    }
+
+    section#intro img{
+        width: 90vw;
+    }
+
+    section#description>* {
+        margin: 10px;
+    }
+}

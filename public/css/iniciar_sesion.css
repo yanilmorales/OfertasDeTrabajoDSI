@@ -1,0 +1,135 @@
+@import url(main.css);
+
+body{
+    background-color: #000000B0;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div#marco{
+    background-color: white;
+    margin: 50px; 
+    width: 450px;
+    padding: 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: 2%;
+    text-align: center;
+}
+
+form{
+    margin: 8px 0;
+    text-align: left;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button{
+    transition: background 0.15s; 
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #323232;
+    background-color: #323232;
+    color:white;
+}
+
+form button:hover{    
+    border: 2px solid #0a0a0a;
+    background-color: #0a0a0a;
+    color: white;
+    cursor: pointer;
+}
+
+div a.btn{
+    display: block;
+    text-align: center;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+div a.fb_btn{
+    transition: background 0.15s;  
+    background-color: #3b5998;
+    border-color:  #3b5998;   
+    color: white;    
+}
+
+div a.fb_btn:hover{    
+    background-color: #2f4677;
+    border-color:  #2f4677;   
+    color: white;    
+}
+
+div a.google_btn{
+    transition: background 0.15s;  
+    border-color: black;
+    background-color: white;  
+    color: black;    
+}
+
+div a.google_btn:hover{
+    border-color: black;
+    background-color: #f0f0f0;  
+    color: black;    
+}
+
+div a.apple_btn{
+    transition: background 0.15s;  
+    background-color: rgb(19, 19, 19);
+    border-color: rgb(19, 19, 19);   
+    color: white;        
+}
+
+div a.apple_btn:hover{    
+    background-color: black;
+    border-color: black;   
+    color: white;        
+}
+
+i{
+    margin-right: 10px;
+}
+
+.hr5 {
+    display: block;
+    margin-top: 20px;
+    border: 0;
+    border-top: thin double black;
+    height: 1px;
+    padding: 0;
+    color: black;
+    text-align: center;
+    height: fit-content;
+  }
+.hr5::before {
+    content: "Tambien puede iniciar sesión con:";
+    display: inline-block;
+    position: relative;
+    top: -0.6em;
+    font-size: 16px;
+    padding: 0 1em;
+    background: white;    
+  }
+
+div a#cuenta{
+    transition: background 0.15s;
+    margin-top: 15px;
+    display: inline-block;
+    color: cornflowerblue;
+}
+
+div a#cuenta:hover{
+    color: black;
+}

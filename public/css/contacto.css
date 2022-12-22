@@ -1,0 +1,84 @@
+@import url(./main.css);
+body{
+    background-color: #555555;
+    background-blend-mode:multiply;
+    background-image: url(../Imagenes/bg_contact.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+div#marco{
+    color: white;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 2%;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+form{
+    background-color: transparent;
+    margin-top: 10px 0;
+    text-align: left;
+}
+
+form input{
+    margin-top: 20px;
+    padding: 10px;
+    width: 95.25%;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+form textarea{
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+form button{
+    transition: background 0.15s;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #323232;
+    background-color: #323232;
+    color:white;
+    margin-bottom: 10px;
+}
+
+form button:hover{    
+    border: 2px solid #0a0a0a;
+    background-color: #0a0a0a;
+    color: white;
+    cursor: pointer;
+}
+
+div .networks{    
+    margin-top: 10px;
+}
+
+div > a{    
+    transition: ease-in-out 0.15s;
+    margin-left: 10px;
+    color: rgb(112, 162, 255);
+}
+
+div > a:hover{
+    color: white;
+    text-decoration-line: underline;
+}

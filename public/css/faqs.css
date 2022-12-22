@@ -1,0 +1,50 @@
+*{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: #000000F0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body>div{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+video {
+    width: 100%;
+}
+
+div#botones {
+    display: block;
+}
+div#botones>* {
+    display: inline-block;
+    color: black;
+    margin: auto 0;
+}
+div#botones div#barra {
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+div#botones div#barra > div#progreso {
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf) format('truetype'),
+        url(../Fonts/Roboto/Roboto-Bold.ttf) format('truetype'),
+        url(../Fonts/Roboto/Roboto-Light.ttf) format('truetype'),
+        url(../Fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+
+:root {
+    --primaryColor: #006688;
+    --vectorColor: #00B3DB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: inherit;
+}

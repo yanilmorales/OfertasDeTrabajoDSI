@@ -1,0 +1,74 @@
+@import url(./main.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+aside {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid var(--primaryColor);
+}
+aside img {
+    width: 100%;
+}
+aside h2 {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+div#body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px 0;
+}
+div#body>div{
+    flex-basis: 60%;
+    padding-left: 10px;
+}
+section > h1 , section > h2 {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid var(--primaryColor);
+}
+section > ul {
+    margin: 10px 40px;
+}
+section p {
+    margin-bottom: 0.5rem;
+}
+section button {
+    transition: background 0.3s;
+    min-width: 130px;
+    border: 2px solid var(--primaryColor);
+    background-color: white;
+    color: var(--primaryColor);
+    padding: 5px;
+    margin-left: 20px;
+}
+section button:hover {
+    background-color: var(--primaryColor);
+    color: white;
+    cursor: pointer;
+}
+section a {
+    color: var(--primaryColor);
+}
+section a:hover {
+    color: var(--vectorColor);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 690px){
+    div#body {
+        flex-direction: column;
+    }
+    section > ul {
+        margin: 10px 5vw;
+    }
+}
